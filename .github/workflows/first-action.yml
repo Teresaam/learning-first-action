@@ -1,0 +1,11 @@
+name: First Workflow
+on: workflow_dispatch #This event allows to manually trigger the workflow
+
+jobs:
+  first-job:
+    runs-on: macos-13 #Here we are defining the Runner
+    steps:
+      - name: Print greeting
+        run: echo "Hello World!"
+      - name: Print goodbye
+        run: echo "Goodbye!"
